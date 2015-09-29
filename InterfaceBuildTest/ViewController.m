@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ScrollerViewController.h"
 
 #define ViewWidth   self.view.frame.size.width
 #define ViewHeight  self.view.frame.size.height
@@ -20,10 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    UIButton *btn = [self createAButton];
-    [self.view addSubview:btn];
-    
+    [self createAButton];
+//    [UIScreen mainScreen].bounds
     [self createALabel];
     [self createAnImageView];
     [self createLine];
@@ -34,7 +32,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(UIButton *)createAButton
+-(void)createAButton
 {
     //创建一个按钮，类型是系统默认的
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -57,8 +55,10 @@
     
     //设置倒角
     button.layer.cornerRadius = 3;
+    
+    [button addTarget:self action:@selector(nextViewAction:) forControlEvents:UIControlEventTouchUpInside];
     //返回按钮
-    return button;
+    [self.view addSubview:button];
 }
 
 -(void)createALabel
@@ -104,5 +104,10 @@
     line_1.backgroundColor = [UIColor whiteColor];
     [view addSubview:line_1];
 }
-
+#pragma mark - actions
+-(void)nextViewAction:(UIButton *)sender
+{
+    ScrollerViewController *scroller = [ScrollerViewController new];
+    [self presentViewController:scroller animated:YES completion:nil];
+}
 @end
