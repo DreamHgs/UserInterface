@@ -14,6 +14,11 @@
 		14BC18221BBAB9ED0084CD51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BC18211BBAB9ED0084CD51 /* Images.xcassets */; };
 		14BC18251BBAB9ED0084CD51 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14BC18231BBAB9ED0084CD51 /* LaunchScreen.xib */; };
 		14BC18311BBAB9EE0084CD51 /* InterfaceBuildTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC18301BBAB9EE0084CD51 /* InterfaceBuildTestTests.m */; };
+		14BC183C1BBABAF60084CD51 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BC183A1BBABAF60084CD51 /* select.png */; };
+		14BC183D1BBABAF60084CD51 /* select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BC183B1BBABAF60084CD51 /* select@2x.png */; };
+		14BC18411BBABD0F0084CD51 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BC183E1BBABD0F0084CD51 /* background.png */; };
+		14BC18421BBABD0F0084CD51 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BC183F1BBABD0F0084CD51 /* background@2x.png */; };
+		14BC18431BBABD0F0084CD51 /* background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BC18401BBABD0F0084CD51 /* background@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		14BC182A1BBAB9EE0084CD51 /* InterfaceBuildTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterfaceBuildTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BC182F1BBAB9EE0084CD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14BC18301BBAB9EE0084CD51 /* InterfaceBuildTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceBuildTestTests.m; sourceTree = "<group>"; };
+		14BC183A1BBABAF60084CD51 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
+		14BC183B1BBABAF60084CD51 /* select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "select@2x.png"; sourceTree = "<group>"; };
+		14BC183E1BBABD0F0084CD51 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		14BC183F1BBABD0F0084CD51 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		14BC18401BBABD0F0084CD51 /* background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,11 @@
 				14BC18191BBAB9ED0084CD51 /* AppDelegate.m */,
 				14BC181B1BBAB9ED0084CD51 /* ViewController.h */,
 				14BC181C1BBAB9ED0084CD51 /* ViewController.m */,
+				14BC183A1BBABAF60084CD51 /* select.png */,
+				14BC183B1BBABAF60084CD51 /* select@2x.png */,
+				14BC183E1BBABD0F0084CD51 /* background.png */,
+				14BC183F1BBABD0F0084CD51 /* background@2x.png */,
+				14BC18401BBABD0F0084CD51 /* background@3x.png */,
 				14BC181E1BBAB9ED0084CD51 /* Main.storyboard */,
 				14BC18211BBAB9ED0084CD51 /* Images.xcassets */,
 				14BC18231BBAB9ED0084CD51 /* LaunchScreen.xib */,
@@ -199,8 +214,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BC18431BBABD0F0084CD51 /* background@3x.png in Resources */,
 				14BC18201BBAB9ED0084CD51 /* Main.storyboard in Resources */,
+				14BC18421BBABD0F0084CD51 /* background@2x.png in Resources */,
+				14BC183D1BBABAF60084CD51 /* select@2x.png in Resources */,
+				14BC18411BBABD0F0084CD51 /* background.png in Resources */,
 				14BC18251BBAB9ED0084CD51 /* LaunchScreen.xib in Resources */,
+				14BC183C1BBABAF60084CD51 /* select.png in Resources */,
 				14BC18221BBAB9ED0084CD51 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
