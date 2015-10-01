@@ -12,8 +12,12 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#import "UIView+Adjust.h"
+
 #define ApplicationWidth        [UIScreen mainScreen].applicationFrame.size.width
 #define ApplicationHeight       [UIScreen mainScreen].applicationFrame.size.height
 #define BoundsWidth             [UIScreen mainScreen].bounds.size.width
 #define BoundsHeight            [UIScreen mainScreen].bounds.size.height
+
+
 #endif
