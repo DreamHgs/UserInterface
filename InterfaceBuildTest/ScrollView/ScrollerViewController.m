@@ -7,6 +7,7 @@
 //
 
 #import "ScrollerViewController.h"
+#import "ControlView.h"
 
 @interface ScrollerViewController ()<UIScrollViewDelegate>
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
     [self createScrollerView];
 }
 
@@ -34,6 +36,8 @@
     scroller.delegate = self;
     [self.view addSubview:scroller];
     
+    ControlView *controlView = [[ControlView alloc]initWithFrame:CGRectMake(0, 0, BoundsWidth, BoundsHeight)];
+    [scroller addSubview:controlView];
 }
 //scrollview的代理方法，tableview也属于scrollview，collectionView也是
 #pragma mark - scroller delegate
