@@ -11,6 +11,8 @@
 
 #define ViewWidth   self.view.frame.size.width
 #define ViewHeight  self.view.frame.size.height
+
+#define NavHeight   64
 @interface ViewController ()
 
 @end
@@ -37,7 +39,7 @@
     //创建一个按钮，类型是系统默认的
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     //设置按钮的位置
-    button.frame = CGRectMake(10, 50, 100, 30);
+    button.frame = CGRectMake(10, NavHeight+10, 100, 30);
     //设置按钮的文字
     [button setTitle:@"hello" forState:UIControlStateNormal];
     //设置文字的颜色
@@ -64,7 +66,7 @@
 -(void)createALabel
 {
     //创建并设置位置
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 100, 100, 30)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, NavHeight+50, 100, 30)];
     //设置背景颜色
     label.backgroundColor = [UIColor greenColor];
     //设置内容

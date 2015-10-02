@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+static NSString *const CloseScrollerView = @"CloseScrollerView";
+
 @interface ControlView : UIView
 
 @end

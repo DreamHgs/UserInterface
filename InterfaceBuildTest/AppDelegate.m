@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:self.window.bounds];
+    
+    ViewController *VC = [[ViewController alloc]init];
+    VC.view.backgroundColor = [UIColor whiteColor];
+    //创建并设置根视图
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:VC];
+    //设置导航栏的颜色
+    [[UINavigationBar appearance]setBarTintColor:[UIColor redColor]];
+    //这个方法也可以设置导航栏的颜色
+    [nav.navigationBar setBarTintColor:[UIColor redColor]];
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

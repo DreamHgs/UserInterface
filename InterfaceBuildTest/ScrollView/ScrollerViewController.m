@@ -21,8 +21,12 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     [self createScrollerView];
+    [self addObserve];
 }
-
+-(void)addObserve
+{
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(closeViewAction) name:CloseScrollerView object:nil];
+}
 -(void)createScrollerView
 {
     UIScrollView *scroller = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, BoundsWidth, BoundsHeight)];
@@ -52,7 +56,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark - actions
+-(void)closeViewAction
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
