@@ -25,6 +25,7 @@
 }
 -(void)addObserve
 {
+    //添加一个通知监听，接受名字为CloseScrollerView的通知
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(closeViewAction) name:CloseScrollerView object:nil];
 }
 -(void)createScrollerView
