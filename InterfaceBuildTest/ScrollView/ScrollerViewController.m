@@ -8,6 +8,7 @@
 
 #import "ScrollerViewController.h"
 #import "ControlView.h"
+#import "TableViewView.h"
 
 @interface ScrollerViewController ()<UIScrollViewDelegate>
 
@@ -43,6 +44,9 @@
     
     ControlView *controlView = [[ControlView alloc]initWithFrame:CGRectMake(0, 0, BoundsWidth, BoundsHeight)];
     [scroller addSubview:controlView];
+    
+    TableViewView *tableView = [[TableViewView alloc]initWithFrame:CGRectMake(BoundsWidth, StatusBarHeight, BoundsWidth, BoundsHeight-StatusBarHeight)];
+    [scroller addSubview:tableView];
 }
 //scrollview的代理方法，tableview也属于scrollview，collectionView也是
 #pragma mark - scroller delegate
