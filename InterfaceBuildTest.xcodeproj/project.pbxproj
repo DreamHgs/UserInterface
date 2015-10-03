@@ -17,6 +17,7 @@
 		14BC184B1BBD69B10084CD51 /* ScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC184A1BBD69B10084CD51 /* ScrollerViewController.m */; };
 		14BC184F1BBD6CA00084CD51 /* UIView+Adjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC184E1BBD6CA00084CD51 /* UIView+Adjust.m */; };
 		14BC18521BBD6E1B0084CD51 /* ControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC18511BBD6E1B0084CD51 /* ControlView.m */; };
+		14BC19B51BC012CB0084CD51 /* TableViewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC19B41BC012CB0084CD51 /* TableViewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		14BC184E1BBD6CA00084CD51 /* UIView+Adjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Adjust.m"; sourceTree = "<group>"; };
 		14BC18501BBD6E1B0084CD51 /* ControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlView.h; sourceTree = "<group>"; };
 		14BC18511BBD6E1B0084CD51 /* ControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlView.m; sourceTree = "<group>"; };
+		14BC19B31BC012CB0084CD51 /* TableViewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewView.h; sourceTree = "<group>"; };
+		14BC19B41BC012CB0084CD51 /* TableViewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				14BC184A1BBD69B10084CD51 /* ScrollerViewController.m */,
 				14BC18501BBD6E1B0084CD51 /* ControlView.h */,
 				14BC18511BBD6E1B0084CD51 /* ControlView.m */,
+				14BC19B31BC012CB0084CD51 /* TableViewView.h */,
+				14BC19B41BC012CB0084CD51 /* TableViewView.m */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14BC184B1BBD69B10084CD51 /* ScrollerViewController.m in Sources */,
+				14BC19B51BC012CB0084CD51 /* TableViewView.m in Sources */,
 				14BC181D1BBAB9ED0084CD51 /* ViewController.m in Sources */,
 				14BC18521BBD6E1B0084CD51 /* ControlView.m in Sources */,
 				14BC184F1BBD6CA00084CD51 /* UIView+Adjust.m in Sources */,

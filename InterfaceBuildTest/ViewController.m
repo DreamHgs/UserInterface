@@ -39,9 +39,9 @@
     //创建一个按钮，类型是系统默认的
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     //设置按钮的位置
-    button.frame = CGRectMake(10, NavHeight+10, 100, 30);
+    button.frame = CGRectMake(10, NavHeight+10, 160, 30);
     //设置按钮的文字
-    [button setTitle:@"hello" forState:UIControlStateNormal];
+    [button setTitle:@"进入下一个界面" forState:UIControlStateNormal];
     //设置文字的颜色
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     //设置按钮的背景颜色
