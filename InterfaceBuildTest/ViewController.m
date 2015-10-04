@@ -61,6 +61,13 @@
     [button addTarget:self action:@selector(nextViewAction:) forControlEvents:UIControlEventTouchUpInside];
     //返回按钮
     [self.view addSubview:button];
+    
+    //创建导航栏按钮，并且添加动作selector
+    UIBarButtonItem *rightBarBtn = [[UIBarButtonItem alloc]initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(addAction:)];
+    //设置文字颜色
+    [rightBarBtn setTintColor:[UIColor whiteColor]];
+    //设右侧按钮（左侧为leftBarButtonItem）
+    self.navigationItem.rightBarButtonItem = rightBarBtn;
 }
 
 -(void)createALabel
@@ -105,11 +112,21 @@
     UIView *line_1 = [[UIView alloc]initWithFrame:CGRectMake(0, 100, ViewWidth, 1)];
     line_1.backgroundColor = [UIColor whiteColor];
     [view addSubview:line_1];
+    
+    //相对位置调整一下即可
+    UILabel *label_1 = [[UILabel alloc]initWithFrame:CGRectMake(10, line_1.y-20, 100, 20)];
+    label_1.text = @"啦啦啦~";
+    [view addSubview:label_1];
 }
 #pragma mark - actions
 -(void)nextViewAction:(UIButton *)sender
 {
     ScrollerViewController *scroller = [ScrollerViewController new];
     [self presentViewController:scroller animated:YES completion:nil];
+}
+
+-(void)addAction:(UIBarButtonItem *)sender
+{
+    NSLog(@"add");
 }
 @end
