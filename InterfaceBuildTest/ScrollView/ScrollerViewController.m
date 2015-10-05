@@ -40,6 +40,10 @@
     scroller.pagingEnabled = YES;
     //添加代理
     scroller.delegate = self;
+    //隐藏水平滚动的标示
+    scroller.showsHorizontalScrollIndicator = NO;
+    //隐藏垂直滚动的标示(在本示例中使用水平滚动，所以这个看不出效果)
+//    scroller.showsVerticalScrollIndicator = NO;
     [self.view addSubview:scroller];
     
     ControlView *controlView = [[ControlView alloc]initWithFrame:CGRectMake(0, 0, BoundsWidth, BoundsHeight)];

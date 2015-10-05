@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "ScrollerViewController.h"
+#import "ExampleViewController.h"
+
+
 
 #define ViewWidth   self.view.frame.size.width
 #define ViewHeight  self.view.frame.size.height
@@ -77,7 +80,7 @@
     //设置背景颜色
     label.backgroundColor = [UIColor greenColor];
     //设置内容
-    label.text = @"ni hao a ~";
+    label.text = @"Xib";
     //修改字体大小
     label.font = [UIFont systemFontOfSize:14.f];
     //修改文字颜色
@@ -87,6 +90,9 @@
     label.textAlignment = NSTextAlignmentCenter;
 //    label.textAlignment = NSTextAlignmentRight;
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(creatWithXib:)];
+    [label setUserInteractionEnabled:YES];
+    [label addGestureRecognizer:tap];
     //添加倒你要添加的视图中
     [self.view addSubview:label];
 }
@@ -96,7 +102,7 @@
     //创建一个图片
     UIImage *image = [UIImage imageNamed:@"background"];
 //    创建一个图片视图，并设置位置
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 140, image.size.width, image.size.height)];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 155, image.size.width, image.size.height)];
 //    设置图片
     imageView.image = image;
     [self.view addSubview:imageView];
@@ -127,6 +133,27 @@
 
 -(void)addAction:(UIBarButtonItem *)sender
 {
-    NSLog(@"add");
+    
+    //使用UIStoryBoard创建视图控制器
+    //首先先找到故事模板
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    //再到所在的故事模板中查找标示符为testView的viewController
+    UIViewController *view = [story instantiateViewControllerWithIdentifier:@"testView"];
+    //弹出视图
+    [self presentViewController:view animated:YES completion:^{
+        
+    }];
+    
+    
+}
+-(void)creatWithXib:(UITapGestureRecognizer *)tap
+{
+    UILabel *label = (UILabel *)tap.view;
+    NSLog(@"%@",label);
+    //使用xib创建视图控制器(如果xib是和.h和.m一起创建的话，使用ExampleViewController *viewController = [[ExampleViewController alloc]init];即可)
+    ExampleViewController *viewController = [[ExampleViewController alloc]initWithNibName:@"ExampleView" bundle:[NSBundle mainBundle]];
+    [self presentViewController:viewController animated:YES completion:^{
+
+    }];
 }
 @end

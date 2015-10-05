@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141D09171BC2B147001C4736 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141D09161BC2B147001C4736 /* TestViewController.m */; };
+		141D091C1BC2B4AA001C4736 /* ExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141D091B1BC2B4AA001C4736 /* ExampleView.xib */; };
+		141D091F1BC2B4BF001C4736 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141D091E1BC2B4BF001C4736 /* ExampleViewController.m */; };
 		14BC18171BBAB9ED0084CD51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC18161BBAB9ED0084CD51 /* main.m */; };
 		14BC181A1BBAB9ED0084CD51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC18191BBAB9ED0084CD51 /* AppDelegate.m */; };
 		14BC181D1BBAB9ED0084CD51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BC181C1BBAB9ED0084CD51 /* ViewController.m */; };
@@ -31,6 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141D09151BC2B147001C4736 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		141D09161BC2B147001C4736 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		141D091B1BC2B4AA001C4736 /* ExampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleView.xib; sourceTree = "<group>"; };
+		141D091D1BC2B4BF001C4736 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		141D091E1BC2B4BF001C4736 /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
 		14BC18111BBAB9ED0084CD51 /* InterfaceBuildTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfaceBuildTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BC18151BBAB9ED0084CD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14BC18161BBAB9ED0084CD51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +81,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141D09141BC2B12D001C4736 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				141D09151BC2B147001C4736 /* TestViewController.h */,
+				141D09161BC2B147001C4736 /* TestViewController.m */,
+				141D091D1BC2B4BF001C4736 /* ExampleViewController.h */,
+				141D091E1BC2B4BF001C4736 /* ExampleViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		141D091A1BC2B496001C4736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				141D091B1BC2B4AA001C4736 /* ExampleView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		14BC18081BBAB9ED0084CD51 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +121,8 @@
 		14BC18131BBAB9ED0084CD51 /* InterfaceBuildTest */ = {
 			isa = PBXGroup;
 			children = (
+				141D091A1BC2B496001C4736 /* View */,
+				141D09141BC2B12D001C4736 /* ViewController */,
 				14BC184C1BBD6C530084CD51 /* Tool */,
 				14BC18481BBD69B10084CD51 /* ScrollView */,
 				14BC18181BBAB9ED0084CD51 /* AppDelegate.h */,
@@ -240,6 +269,7 @@
 				14BC18201BBAB9ED0084CD51 /* Main.storyboard in Resources */,
 				14BC18251BBAB9ED0084CD51 /* LaunchScreen.xib in Resources */,
 				14BC18221BBAB9ED0084CD51 /* Images.xcassets in Resources */,
+				141D091C1BC2B4AA001C4736 /* ExampleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +290,11 @@
 				14BC184B1BBD69B10084CD51 /* ScrollerViewController.m in Sources */,
 				14BC19B51BC012CB0084CD51 /* TableViewView.m in Sources */,
 				14BC181D1BBAB9ED0084CD51 /* ViewController.m in Sources */,
+				141D091F1BC2B4BF001C4736 /* ExampleViewController.m in Sources */,
 				14BC18521BBD6E1B0084CD51 /* ControlView.m in Sources */,
 				14BC184F1BBD6CA00084CD51 /* UIView+Adjust.m in Sources */,
 				14BC181A1BBAB9ED0084CD51 /* AppDelegate.m in Sources */,
+				141D09171BC2B147001C4736 /* TestViewController.m in Sources */,
 				14BC18171BBAB9ED0084CD51 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
